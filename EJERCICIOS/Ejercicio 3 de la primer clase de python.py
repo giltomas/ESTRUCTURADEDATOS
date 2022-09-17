@@ -10,12 +10,11 @@
 #-------------------------------------------------------------------------------
 
 def main():
-    #Le pido al usuario que ingrese su nombre y DNI mediante el "input" y luego con la función "f" las ingreso dentro del texto
-    Nombre = input("Ingrese su nombre: ")
-    Dni = input("Ingrese su DNI: ")
-    print(f"El nombre del usuario es {Nombre} y su DNI es {Dni}")
-
-
+    #Ejercicio 1 de condicionales y bucles
+    numeroimpar = (int(input("Ingrese un numero impar: ")))
+    while numeroimpar % 2 == 0:
+        numeroimpar = (int(input("Error, ingrese un numero impar: ")))
+    print(f"El numero ingresado es impar: {numeroimpar}")
 
 
 

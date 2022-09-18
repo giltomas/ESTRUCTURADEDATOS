@@ -10,22 +10,11 @@
 #-------------------------------------------------------------------------------
 
 def main():
-    #Ejercicio 2 de condicionales y bucles
-    print("OPERACIONES ARITMETICAS")
-    numerouno = (int(input("Ingrese su primer numero: ")))
-    numerodos = (int(input("Ingrese su segundo numero: ")))
-    opcion = (int(input("Ingrese la opción que quiera, 1. Sumar, 2. Restar, 3. Multiplicar: ")))
-    while opcion < 1 or opcion > 3:
-        print("Error, vuelva a elegir una opción")
-        opcion = (int(input("Ingrese la opción que quiera: 1. Sumar, 2. Restar, 3. Multiplicar")))
-    if opcion == 1:
-        print(f"La opción escogida es sumar: {numerouno} + {numerodos} = {numerouno + numerodos}")
-    if opcion == 2:
-        print(f"La opción escogida es restar: {numerouno} - {numerodos} = {numerouno - numerodos}")
-    if opcion == 3:
-        print(f"La opción escogida es multiplicar: {numerouno} * {numerodos} = {numerouno * numerodos}")
-    print("Operación finalizada")
-
+    contador = 10
+    while contador>0:
+        print("entende cintia")
+        contador -= 1
+    print("no era tan dificil viste")
 
 
 

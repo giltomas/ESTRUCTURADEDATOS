@@ -15,7 +15,7 @@ def main():
     suma = 0
     for i in lista:
         suma += i
-        print(suma)
+    print("El total de la suma es", suma)
 
 
 

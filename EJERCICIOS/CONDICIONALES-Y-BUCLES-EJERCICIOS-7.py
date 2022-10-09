@@ -11,12 +11,12 @@
 
 def main():
     #Ejercicio numero 7 de condicionales y bucles, no utilizar max
-    lista = [40, 6, 12, 24, 48, 96]
-    menor = lista[0]
+    lista = [2, 6, 12, 24, 48, 96]
+    mayor = 0
     for i in lista:
-        if i<menor:
-            menor = i
-    print("El valor minimo es", menor)
+        if i>mayor:
+            mayor = i
+    print("El valor maximo es", mayor)
 
 
 

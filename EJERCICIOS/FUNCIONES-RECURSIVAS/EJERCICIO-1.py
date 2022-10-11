@@ -15,7 +15,7 @@ def main():
     totcadena = []
     def datos(lista):
         codsuc = input("Ingrese el codigo de la sucursal: ")
-        while codsuc != "0":
+        if (codsuc != "0"):
             nomsuc = input("Ingrese el nombre de la sucursal: ")
             ventas = int(input("Ingrese las ventas de la sucursal: "))
             total = int(input("Ingrese el total de las ventas: "))
@@ -26,9 +26,10 @@ def main():
             lista.append(total)
             promedios.append(promedio)
             totcadena.append(total)
-            codsuc = input("Ingrese el codigo de la sucursal: ")
+            datos(lista)
         else:
             return
+
 
     def imprimir_datos(lista):
         print("Su lista es", lista)

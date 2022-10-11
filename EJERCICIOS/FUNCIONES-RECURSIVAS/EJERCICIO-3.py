@@ -10,14 +10,13 @@
 #-------------------------------------------------------------------------------
 
 def main():
-    def suma (numero):
-        sumados = 0
-        for i in range(numero):
-            sumados += i
-        print("El total de la suma es", sumados)
+    def suma(numero):
+        if numero == 1:
+            return 1
+        else:
+            return numero + suma(numero-1)
 
-    suma(11)
-
+    print(suma(9))
 
 
 

@@ -11,15 +11,15 @@
 
 def main():
     #Implementar una función recursiva que permita recorrer una matriz y mostrar sus valores.
-    def recorrer(lista):
-        for i in lista:
-            if lista != []:
-                print(i)
-            else:
-                return recorrer(lista)
+    def recorrer(lista, ind):
+        if ind != len(lista):
+            print(lista[ind])
+            recorrer(lista, ind+1)
 
-    lista1 =  [[23,45,63],[72,81,91],[56,64,37],[34,75,26]]
-    recorrer(lista1)
+    lista1 = [[23,45,63],[72,81,91],[56,64,37],[34,75,26]]
+    recorrer(lista1, 0)
+
+
 
 if __name__ == '__main__':
     main()

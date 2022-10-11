@@ -17,7 +17,7 @@ def main():
             if lista != []:
                 print(i)
             else:
-                return
+                return mostrar(lista)
 
     lista1 = [1, 2, 3, 4, 5]
     mostrar(lista1)

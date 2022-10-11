@@ -11,16 +11,14 @@
 
 def main():
     #Escribir una función recursiva que permita mostrar los valores de un vector de atrás hacia adelante.
-    def mostrar(lista):
+    def mostrar(lista, ind):
         lista.reverse()
-        for i in lista:
-            if lista != []:
-                print(i)
-            else:
-                return mostrar(lista)
+        if ind != len(lista):
+            print(lista[ind])
+            mostrar(lista, ind+1)
 
-    lista1 = [1, 2, 3, 4, 5]
-    mostrar(lista1)
+    lista = [1, 2, 3, 4, 5]
+    mostrar(lista, 0)
 
 if __name__ == '__main__':
     main()
